@@ -1,23 +1,19 @@
-// WAP to Swap two num
+public class NumberSwapper {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
 
-public class swapnum
-{
-    int a,b;
-    public static void swapnumb(swapnum stn)
-    {
-        int temp;
-        temp = stn.a;
-        stn.a =stn.b;
-        stn.b =temp;
-    }
-    public static void main(String arr[])
-    {
-        swapnum sn = new swapnum();
-        sn.a=1;
-        sn.b=2;
-        System.out.println("a = "+sn.a+" b = "+sn.b);
-        sn.swapnumb(sn);
-        System.out.println("a = "+sn.a+" b = "+sn.b);
+        System.out.println("Before swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
 
+        // Swapping logic
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("After swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
     }
 }
